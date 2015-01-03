@@ -42,6 +42,7 @@ function start() {
         -Dhttp.address=${OPENSHIFT_PLAY_FRAMEWORK_PRIVATE_IP} \
         -Dapplication.secret=${OPENSHIFT_SECRET_TOKEN} \
         -Dpidfile.path=${PLAY_FRAMEWORK_PID_FILE} \
+        -Dconfig.resource=prod.conf
         -Dlogger.file=${OPENSHIFT_HOMEDIR}/play-framework/configuration/logger.xml |& \
         /usr/bin/logshifter -tag play-framework &
 }

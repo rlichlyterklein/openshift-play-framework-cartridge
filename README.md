@@ -8,3 +8,7 @@ Because the application is delivered already compiled and packaged into a zip fi
 * `http.address=${OPENSHIFT_PLAY_FRAMEWORK_PRIVATE_IP}`
 * `application.secret=${OPENSHIFT_SECRET_TOKEN}`
 * `pidfile.path=${OPENSHIFT_HOMEDIR}/app-root/runtime/play-framework.pid`
+
+## Reason for the fork
+
+Need to add the prod.conf to the start script 
